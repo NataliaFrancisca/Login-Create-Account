@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Yusei+Magic&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(120,123,124,0.5);
+}
+
+span{
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+a{
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.login-inputs input, 
+.create-inputs input{
+  width: 250px;
+  background: transparent;
+  border-bottom: solid black 0.1rem;
+  height: 5px;
+  padding: 10px;
+  outline: none;
+  transition: height 0.6s ease;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.login-inputs input:focus,
+.create-inputs input:focus{
+  height: 30px;
+  font-size: 1.1rem;
+}
+
+.login,
+.create-account{
+  height: 400px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(131,111,255,0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.create-account{
+  height: 450px;
+  width: 350px;
+}
+
+.create-account h1{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.login-objects,
+.account-objects{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-objects button,
+.account-objects button{
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bolder;
+}
+
+button:hover{
+  background: rgba(0,0,0,0.2);
+  border: solid black 0.1rem;
+}
+
+.txtRegister,
+.textLogin{
+  font-size: 1rem;
+  display: flex;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.login-inputs, 
+.create-inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.emailLabel, 
+.passwordLabel,
+.nameLabel,{
+  position: relative;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 900;
+ -webkit-box-reflext: below -12px linear-gradient( 
+    transparent, rgba(123,125,152,0.2));
+}
+
+.efectSpan{
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  animation: animate 1s ease-in-out;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  20%{
+    transform: translateY(-20px);
+  }
+
+  40%,100%{
+    transform: translateY(0px);
+  }
+
+}
+
+@media(max-width: 450px){
+  .login,
+  .create-account{
+    width: 300px;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+}
+
+
