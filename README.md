@@ -6,5 +6,5 @@
 
 ## :arrow_forward: O que melhorar:
 
-[ ] - Melhorar a validação do e-mail.  
-[ ] - Acrescentar efeitos visuais para erros na validação.
+- [X] - Melhorar a validação do e-mail.  
+- [X] - Acrescentar efeitos visuais para erros na validação.
