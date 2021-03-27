@@ -7,6 +7,8 @@ let spanPassword = document.getElementsByClassName("spanPassword");
 let inputName = document.getElementById("inputName");
 let spanName = document.getElementsByClassName("spanName");
 
+let errorMessage = document.querySelector(".error");
+
 animationInputEmail();
 animationInputPassword();
 animationInputName();
