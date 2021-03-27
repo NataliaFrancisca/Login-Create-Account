@@ -4,19 +4,19 @@ let password = document.getElementById("inputPassword");
 
 function validaCamposCreate(){
 
-	if(name.value == "" || name.lenght <= 1){
+	if(name.value == "" || name.value.lenght <= 1){
 		alert("Digite um nome válido!")
 		name.focus();
 		return false;
 	}
 
-	if(email.value == "" || email.lenght <= 10){
+	if(!validateEmail(email.value)){
 		alert("Digite um email válido!");
 		email.focus();
 		return false;
 	}
-
-	if(password.value == "" || password.lenght < 8){
+	
+	if(password.value == "" || password.value.length < 8){
 		alert("Digite uma senha válida!");
 		password.focus();
 		return false;
@@ -34,18 +34,18 @@ function validaCamposCreate(){
 
 }
 
-
 function validaCamposLogin(){
 
-	if(email.value == "" || email.lenght <= 10){
+	if(!validateEmail(email.value)){
 		alert("Digite um email válido!");
 		email.focus();
 		return false;
 	}
 
-	if(password.value == "" || password.lenght < 8){
+	if(password.value == "" || password.value.length < 8){
 		alert("Digite uma senha válida!");
 		password.focus();
+		return false;
 	}
 
 	if(email.value && password.value ){
@@ -58,3 +58,9 @@ function validaCamposLogin(){
 	}
 
 }
+
+function validateEmail(email) {
+  const re = /\S+@\S+\.\S+/;
+  	return re.test(email);
+}
+
