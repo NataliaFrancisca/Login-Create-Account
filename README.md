@@ -1,10 +1,12 @@
-# Página de Login e Cadastro
+# :email: Login e Cadastro
 
 ## Neste projeto, criei duas telas sendo uma para login e outra para cadastro. Apliquei as validações dos campos com javascript. 
 
-### :link: Teste você mesmo: (https://logincreate-accountnf.netlify.app/)
+### :link: Teste você mesmo: https://logincreate-accountnf.netlify.app/
 
-## :arrow_forward: O que melhorar:
+### :arrow_forward: O que melhorar:
 
 - [X] - Melhorar a validação do e-mail.  
+- [X] - Organizar o código CSS.
 - [X] - Acrescentar efeitos visuais para erros na validação.
+
